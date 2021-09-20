@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zachary Tabler | Personal Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a
+          href="https://calendly.com/zachary-tabler/code-with-me"
+          target="_blank"
+          ><img
+            src="img/Code with Zach.jpg"
+            alt="Code With Zach Logo"
+            class="calendly__link"
+        /></a>
+      </div>
+      <button class="nav-toggle" aria-label="=toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#inventory" class="nav__link">My Technical Inventory</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="https://zacharytabler.github.io/resume/"
+              target="_blank"
+              class="nav__link"
+              >My Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Zachary Tabler</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">software dev</p>
+      <img
+        src="img/Zachary Tabler.jpg"
+        alt="A picture of Zachary Tabler"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- Introduction -->
+    <section class="my-tech-inventory" id="inventory">
+      <h2 class="section__title section__title--inventory">
+        What I've Learned
+      </h2>
+      <div class="mytechstack">
+        <div class="techstack">
+          <h3>Front End</h3>
+          <p>
+            HTML • CSS • JavaScript • JSON • React • REST APIs • Responsive
+            Design / Mobile
+          </p>
+        </div>
+        <div class="techstack">
+          <h3>Back End</h3>
+          <p>
+            Java • Spring • Thymeleaf • MVC • Relational Databases • Object
+            Oriented Programming (OOP)
+          </p>
+        </div>
+        <div class="techstack">
+          <h3>Additional Skills</h3>
+          <p>Agile Methodology (Scrum) • TDD • Source Control / GitHub</p>
+        </div>
+      </div>
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I Am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Dynamic Software Developer based out of Columbus, Ohio
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          I am a current Java boot camp student at We Can Code It, in Columbus,
+          Ohio. I am optimistic my time at We Can Code will allow me to make a
+          career transition into software development. Prior to We Can Code It,
+          I spent the last 15 years as a sales agent and sales executive for two
+          of the largest personal lines insurance companies in the United
+          States.
+        </p>
+        <p>
+          I've had a lot of success in insurance, but I am now ready to pursue
+          new endeavors.
+        </p>
+      </div>
+
+      <img
+        src="img/Family.jpeg"
+        alt="The Tabler Family"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title--work">What I've Built</h2>
+      <p class="section__subtitle--work">A selection of my range of work</p>
+
+      <div class="portfolio">
+        <!-- Jackr Trekr -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img
+            src="img/jackr-trekr.gif"
+            alt="Jackr Trekr homepage"
+            class="portfolio__img"
+          />
+        </a>
+        <!-- Space KIDet -->
+        <a href="portfolio-item 2.html" class="portfolio__item">
+          <img
+            src="img/space-kidet.gif"
+            alt="Space KIDet homepage"
+            class="portfolio__img"
+          />
+        </a>
+        <!-- Healthy Response Assistant -->
+        <a href="portfolio-item 3.html" class="portfolio__item">
+          <img
+            src="img/healthy-response.gif"
+            alt="Healthy Response homepage"
+            class="portfolio__img"
+          />
+        </a>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:zachary.tabler@gmail.com" class="footer__link"
+        >zachary.tabler@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/zacharytabler/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/zacharytabler"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
